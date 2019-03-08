@@ -1,0 +1,9 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "My first wordpress landing",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
