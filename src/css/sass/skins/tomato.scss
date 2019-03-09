@@ -85,3 +85,41 @@ path {
 .section-subtitle::after {
 	background-color: $main_color;
 }
+
+
+.about-col {
+	
+	&-title {
+		color: $text_color;
+	}
+
+	&-text:nth-of-type(odd) {
+		color: $color;
+	}
+}
+
+.resume-col {
+	&-left {
+		border-right-color: $main_color;
+	}
+	
+	&-item-year {
+		background-color: $color;
+		color: white;
+	}
+
+	&-item-description {
+		color: $main_color;
+	}
+}
+
+.portfolio {
+	&-item {
+		color: $text_color;
+
+		&-active {
+			color: white;
+			border-bottom-color: $color;
+		}
+	}
+}

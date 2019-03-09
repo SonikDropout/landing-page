@@ -15,6 +15,18 @@ body input:required:valid,
 body textarea:required:valid {
   color: green; }
 
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+
+button:not(:disabled) {
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
 .hidden {
   display: none; }
 
@@ -57,8 +69,7 @@ body textarea:required:valid {
   width: 60px;
   height: 60px;
   border: none;
-  float: right;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   z-index: 1002; }
@@ -216,9 +227,149 @@ body textarea:required:valid {
       content: "";
       width: 150px;
       display: block;
-      margin: 30px auto 120px;
+      margin: 30px auto 60px;
       height: 1px; }
 
+.about-col {
+  margin-top: 40px; }
+  .about-col-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    margin-bottom: 35px; }
+  .about-col-img {
+    max-width: 220px;
+    display: inline-block;
+    border-radius: 50%; }
+    .about-col-img-wrapper {
+      text-align: center; }
+  .about-col-text:first-of-type {
+    margin-bottom: 30px; }
+  .about-col-name {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: center; }
+  .about-col-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .about-col-item {
+    margin-bottom: 10px; }
+  .about-col-social {
+    list-style: none;
+    margin: 30px 0 0;
+    padding: 0; }
+    .about-col-social-item {
+      display: inline-block; }
+    .about-col-social-link {
+      font-size: 20px; }
+
+/*==============================================
+						RESUME SECTION STYLES
+==============================================*/
+.resume-col-left {
+  text-align: right;
+  border-right: 1px solid; }
+
+.resume-col-icon {
+  font-size: 40px; }
+
+.resume-col-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.resume-col-item {
+  margin-top: 30px; }
+  .resume-col-item-year {
+    font-style: italic;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 15px; }
+  .resume-col-item-description {
+    font-style: italic;
+    letter-spacing: 1px; }
+    .resume-col-item-description-position {
+      font-style: normal;
+      text-transform: uppercase; }
+
+/*==============================================
+						
+==============================================*/
+.portfolio-list {
+  text-align: center; }
+
+.portfolio-item {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 15px;
+  padding: 5px 0;
+  cursor: pointer; }
+  .portfolio-item-active {
+    border-bottom: 1px solid; }
+
+.portfolio-col {
+  padding: 0;
+  position: relative;
+  overflow: hidden; }
+  .portfolio-col:hover .portfolio-col-overlay {
+    opacity: 1;
+    bottom: 0; }
+  .portfolio-col-image {
+    width: 100%; }
+  .portfolio-col-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 50%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10% 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s ease-in-out; }
+    .portfolio-col-overlay-title {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: inherit;
+      font-weight: 400; }
+    .portfolio-col-overlay-text {
+      color: inherit; }
+    .portfolio-col-overlay-btn {
+      background-color: transparent;
+      border: 1px solid white;
+      padding: 5px 10px;
+      color: inherit; }
+
+.portfolio-work {
+  background-color: white;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px 15px;
+  text-align: center; }
+  .portfolio-work-title {
+    margin-top: 0;
+    margin-bottom: 20px; }
+  .portfolio-work-image {
+    width: 100%; }
+
+.mix-container .mix {
+  display: none; }
+
+.mfp-content {
+  max-width: 600px; }
+
+/*==============================================
+						FOOTRE STYLES
+==============================================*/
 .footer {
   padding: 20px 0;
   font-size: 13px;

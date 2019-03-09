@@ -48,6 +48,36 @@ $(document).ready(function () {
   $(".header-content-title").animated("fadeInDown", "fadeOutUp")
   $(".section-header, .header-content-text").animated("fadeInUp", "fadeOutDown")
 
+
+  //IMAGE POPUP ON CLICK
+  $(".about-col-img-link").magnificPopup({ type: "image" });
+
+
+  //ABOUT SECTION COL ANIMATINOS
+  $(".about-col-about").animated("fadeInLeft", "fadeOutLeft");
+  $(".about-col-photo").animated("flipInY", "flipOutY");
+  $(".about-col-personal").animated("fadeInRight", "fadeOutRight");
+
+
+  //RESUME SECTION ANIMATIONS
+  $(".resume-col-left .resume-col-item").animated("fadeInLeft", "fadeOutLeft");
+  $(".resume-col-right .resume-col-item").animated("fadeInRight", "fadeOutRight");
+
+
+  //PORFOLIO LIST FUNCTIONALITY
+  $(".portfolio-item").click(function () {
+    $(".portfolio-item-active").removeClass("portfolio-item-active");
+    $(this).addClass("portfolio-item-active");
+  });
+
+  $(".mix-container").mixItUp();
+
+  $(".portfolio-col-overlay-btn").magnificPopup({
+    showCloseBtn: true,
+    closeBtnInside: true,
+  });
+
+  $(".mpf-content").has(".portfolio - work").css("max-width", 600);
 });
 
 $(window).load(function () {

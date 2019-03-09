@@ -52,3 +52,25 @@ path {
 
 .section-subtitle::after {
   background-color: #222; }
+
+.about-col-title {
+  color: #888; }
+
+.about-col-text:nth-of-type(odd) {
+  color: #FF6347; }
+
+.resume-col-left {
+  border-right-color: #222; }
+
+.resume-col-item-year {
+  background-color: #FF6347;
+  color: white; }
+
+.resume-col-item-description {
+  color: #222; }
+
+.portfolio-item {
+  color: #888; }
+  .portfolio-item-active {
+    color: white;
+    border-bottom-color: #FF6347; }
